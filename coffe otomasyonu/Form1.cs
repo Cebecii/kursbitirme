@@ -28,7 +28,7 @@ namespace coffe_otomasyonu
             {
                 Form2 f2 = new Form2();
 
-
+                int a;
                 f2.ShowDialog();
             }
         }
