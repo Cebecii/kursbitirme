@@ -73,7 +73,7 @@
             // 
             // btn_giris
             // 
-            this.btn_giris.Location = new System.Drawing.Point(436, 188);
+            this.btn_giris.Location = new System.Drawing.Point(441, 184);
             this.btn_giris.Name = "btn_giris";
             this.btn_giris.Size = new System.Drawing.Size(91, 41);
             this.btn_giris.TabIndex = 3;
@@ -83,7 +83,7 @@
             // 
             // btn_kayıt
             // 
-            this.btn_kayıt.Location = new System.Drawing.Point(436, 247);
+            this.btn_kayıt.Location = new System.Drawing.Point(441, 231);
             this.btn_kayıt.Name = "btn_kayıt";
             this.btn_kayıt.Size = new System.Drawing.Size(91, 43);
             this.btn_kayıt.TabIndex = 4;

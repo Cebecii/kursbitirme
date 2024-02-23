@@ -27,8 +27,7 @@ namespace coffe_otomasyonu
             if (true)
             {
                 Form2 f2 = new Form2();
-
-                int a;
+                   
                 f2.ShowDialog();
             }
         }
@@ -41,6 +40,14 @@ namespace coffe_otomasyonu
         private void cbKayit_CheckedChanged(object sender, EventArgs e)
         {
             cbGiris.Checked = false;
+            if (cbKayit.Checked==true)
+            {
+                cbGiris.Visible = false;
+            }
+            else
+            {
+                cbGiris.Visible = true;
+            }
         }
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
@@ -55,7 +62,16 @@ namespace coffe_otomasyonu
             {
                 txtSifre2.Visible = false;
                 btn_kayıt.Visible = false;
+                label4.Visible = false;
+                cbKayit.Visible = false;
 
+            }
+            else
+            {
+                txtSifre2.Visible = true;
+                btn_kayıt.Visible = true;
+                label4.Visible = true;
+                cbKayit.Visible = true;
             }
         }
     }
