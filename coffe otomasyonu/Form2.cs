@@ -16,5 +16,29 @@ namespace coffe_otomasyonu
         {
             InitializeComponent();
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            Form1 fm = new Form1();
+            fm.ShowDialog();
+        }
+
+        private void pictureBox2_MouseEnter(object sender, EventArgs e)
+        {
+            pictureBox2.Width += 7;
+            pictureBox2.Height += 7;
+        }
+
+        private void pictureBox2_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox2.Width -= 7;
+            pictureBox2.Height -= 7;
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+        }
     }
 }

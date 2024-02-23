@@ -26,27 +26,28 @@ namespace coffe_otomasyonu
         {
             if (true)
             {
-                Form2 f2 = new Form2();
-                   
-                f2.ShowDialog();
+                this.Close();
             }
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            btn_kayıt.Visible = false;
+            txtSifre2.Visible = false;
+            label4.Visible = false;    
         }
 
         private void cbKayit_CheckedChanged(object sender, EventArgs e)
         {
-            cbGiris.Checked = false;
             if (cbKayit.Checked==true)
             {
-                cbGiris.Visible = false;
-            }
-            else
-            {
-                cbGiris.Visible = true;
+                cbKayit.Checked = true;
+                cbGiris.Checked = false;
+
+                btn_kayıt.Visible = true;
+                txtSifre2.Visible = true;
+                label4.Visible = true;
+                btn_giris.Visible = false;
             }
         }
 
@@ -57,22 +58,21 @@ namespace coffe_otomasyonu
 
         private void cbGiris_CheckedChanged(object sender, EventArgs e)
         {
-            cbKayit.Checked = false;
-            if (cbGiris.Checked==true)
+            if (cbGiris.Checked == true)
             {
-                txtSifre2.Visible = false;
-                btn_kayıt.Visible = false;
-                label4.Visible = false;
-                cbKayit.Visible = false;
+                cbGiris.Checked = true;
+                cbKayit.Checked = false;
 
+                btn_kayıt.Visible = false;
+                txtSifre2.Visible =false;
+                label4.Visible = false;
+                btn_giris.Visible = true;
             }
-            else
-            {
-                txtSifre2.Visible = true;
-                btn_kayıt.Visible = true;
-                label4.Visible = true;
-                cbKayit.Visible = true;
-            }
+        }
+
+        private void pictureBox1_Click_2(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

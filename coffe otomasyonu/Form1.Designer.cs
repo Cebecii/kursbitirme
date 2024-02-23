@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtUser = new System.Windows.Forms.TextBox();
             this.txtPwd = new System.Windows.Forms.TextBox();
             this.btn_giris = new System.Windows.Forms.Button();
@@ -41,22 +40,13 @@
             this.cbKayit = new System.Windows.Forms.CheckBox();
             this.txtSifre2 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-8, -7);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(852, 462);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
-            // 
             // txtUser
             // 
+            this.txtUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtUser.Location = new System.Drawing.Point(282, 108);
             this.txtUser.Multiline = true;
             this.txtUser.Name = "txtUser";
@@ -65,6 +55,7 @@
             // 
             // txtPwd
             // 
+            this.txtPwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtPwd.Location = new System.Drawing.Point(282, 147);
             this.txtPwd.Multiline = true;
             this.txtPwd.Name = "txtPwd";
@@ -93,10 +84,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(133, 108);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 29);
+            this.label1.Size = new System.Drawing.Size(145, 31);
             this.label1.TabIndex = 5;
             this.label1.Text = "Kullanıcı adı";
             // 
@@ -126,7 +119,7 @@
             this.cbGiris.Checked = true;
             this.cbGiris.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.cbGiris.Location = new System.Drawing.Point(297, 314);
+            this.cbGiris.Location = new System.Drawing.Point(282, 314);
             this.cbGiris.Name = "cbGiris";
             this.cbGiris.Size = new System.Drawing.Size(104, 28);
             this.cbGiris.TabIndex = 8;
@@ -148,6 +141,7 @@
             // 
             // txtSifre2
             // 
+            this.txtSifre2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtSifre2.Location = new System.Drawing.Point(282, 188);
             this.txtSifre2.Multiline = true;
             this.txtSifre2.Name = "txtSifre2";
@@ -164,12 +158,26 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Parola Tekrar";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(754, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(34, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_2);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.ControlBox = false;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.cbKayit);
             this.Controls.Add(this.cbGiris);
             this.Controls.Add(this.label3);
@@ -181,7 +189,6 @@
             this.Controls.Add(this.txtSifre2);
             this.Controls.Add(this.txtPwd);
             this.Controls.Add(this.txtUser);
-            this.Controls.Add(this.pictureBox1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
@@ -196,8 +203,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.TextBox txtPwd;
         private System.Windows.Forms.Button btn_giris;
@@ -209,6 +214,7 @@
         private System.Windows.Forms.CheckBox cbKayit;
         private System.Windows.Forms.TextBox txtSifre2;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
