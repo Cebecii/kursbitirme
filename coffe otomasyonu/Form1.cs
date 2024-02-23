@@ -32,5 +32,31 @@ namespace coffe_otomasyonu
                 f2.ShowDialog();
             }
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbKayit_CheckedChanged(object sender, EventArgs e)
+        {
+            cbGiris.Checked = false;
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbGiris_CheckedChanged(object sender, EventArgs e)
+        {
+            cbKayit.Checked = false;
+            if (cbGiris.Checked==true)
+            {
+                txtSifre2.Visible = false;
+                btn_kayıt.Visible = false;
+
+            }
+        }
     }
 }
