@@ -21,6 +21,13 @@ namespace coffe_otomasyonu
         {
             Form1 fm = new Form1();
             fm.ShowDialog();
+            label2.Visible = false;
+            label3.Visible = false;
+            label4.Visible = false;
+            label5.Visible = false;
+            label6.Visible = false;
+            linkLabel1.Visible = false;
+            linkLabel2.Visible = false;
         }
 
         private void pictureBox2_MouseEnter(object sender, EventArgs e)
@@ -39,6 +46,61 @@ namespace coffe_otomasyonu
         {
             this.Close();
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+
+
+
+
+
+
+
+
+
+
+            //iletişim bilgileri gizleniyor
+            label2.Visible = false;
+            label3.Visible = false;
+            label4.Visible = false;
+            label5.Visible = false;
+            label6.Visible = false;
+            linkLabel1.Visible = false;
+            linkLabel2.Visible = false;
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            urunForm urunForm = new urunForm();
+            urunForm.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            label2.Visible = true;
+            label3.Visible = true;
+            label4.Visible = true;
+            label5.Visible = true;
+            label6.Visible = true;
+            linkLabel1.Visible=true;
+            linkLabel2.Visible=true;
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://harunisik.unaux.com/?i=1"); 
         }
     }
 }
