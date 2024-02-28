@@ -21,13 +21,24 @@ namespace coffe_otomasyonu
         {
          
         }
-
+        cafe_otomasyonEntities co=new cafe_otomasyonEntities();
+        
         private void button1_Click(object sender, EventArgs e)
         {
-            if (true)
+            foreach (var item in co.login.ToList())
             {
-                this.Close();
+                if (item.userName==txtUser.Text)
+                {
+                    if (item.password==txtPwd.Text)
+                    {
+                        Form2 form = new Form2();
+                        form.ShowDialog();
+                        this.Hide();
+                    }
+                }
             }
+
+           
         }
 
         private void Form1_Load(object sender, EventArgs e)
