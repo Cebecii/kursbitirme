@@ -19,8 +19,12 @@ namespace coffe_otomasyonu
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            this.IsMdiContainer = true;
+
             Form1 fm = new Form1();
             fm.ShowDialog();
+
+            this.WindowState = FormWindowState.Maximized;
             label2.Visible = false;
             label3.Visible = false;
             label4.Visible = false;
@@ -101,6 +105,13 @@ namespace coffe_otomasyonu
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("http://harunisik.unaux.com/?i=1"); 
+        }
+
+        private void button3_MouseClick(object sender, MouseEventArgs e)
+        {
+            masalarForm fm= new masalarForm(); 
+            fm.MdiParent = this;
+            fm.Show();
         }
     }
 }

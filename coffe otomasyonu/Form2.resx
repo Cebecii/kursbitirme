@@ -305,7 +305,7 @@
         XTesb3QPLh88M+QwdP6m681Lt7xuXbu94vbgcOjwnZHokdE77DtTd1PuvriXeW/h/sYH6AdFD6UeVjxS
         fNTws+7PbaOWo6fHXMf6Hwc/vj/OGn/2S8Yv7ycKnpCfVEyqTDZPmU2dmnafvvF05dOJZ+nPFmYKf5X+
         tfa5zvMffnP8rX82YnbiBf/Fp99LXsq/PPRq2aueuYC5R69TXy/MF72Rf3P4LeNt37vwd5MLWe+x7ys/
-        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAALEQAACxEBf2RfkQAAVAVJREFUeF7t3XeYZEW5
+        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAALDwAACw8BkvkDpQAAVAVJREFUeF7t3XeYZEW5
         x/G7LBkERAkKIuIuS1pYcs6C5CyuEkWQHCUJEiSJIAgoWZScJEoQlKSS85IFZCfnmZ2cZ+q+1acWe8++
         0zuhu+fUqe/veT5/3Hq8TFedt8J2OOf/jDEAAACpoTYCAAD4Sm0EAADwldoIAADgK7URAADAV2ojAACA
         r9RGAAAAX6mNAAAAvlIbAQAAfKU2AgAA+EptBAAA8JXaCAAA4Cu1EQAAwFdqIwAAgK/URgAAAF+pjQAA
@@ -1418,13 +1418,13 @@
     <value>226, 470</value>
   </data>
   <data name="linkLabel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>594, 34</value>
+    <value>617, 34</value>
   </data>
   <data name="linkLabel2.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
   <data name="linkLabel2.Text" xml:space="preserve">
-    <value>Osman Doğuş Cebeci Eb Sitesi Yakında...</value>
+    <value>Osman Doğuş Cebeci Web Sitesi Yakında...</value>
   </data>
   <data name="&gt;&gt;linkLabel2.Name" xml:space="preserve">
     <value>linkLabel2</value>
