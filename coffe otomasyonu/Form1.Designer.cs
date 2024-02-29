@@ -80,6 +80,7 @@
             this.btn_kayıt.TabIndex = 4;
             this.btn_kayıt.Text = "Kayıt ol";
             this.btn_kayıt.UseVisualStyleBackColor = true;
+            this.btn_kayıt.Click += new System.EventHandler(this.btn_kayıt_Click);
             // 
             // label1
             // 

@@ -27,14 +27,20 @@ namespace coffe_otomasyonu
         {
             foreach (var item in co.login.ToList())
             {
-                if (item.userName==txtUser.Text)
+                if (txtUser.Text==item.userName)
                 {
-                    if (item.password==txtPwd.Text)
+                    if (txtPwd.Text==item.password)
                     {
-                        Form2 form = new Form2();
-                        form.ShowDialog();
-                        this.Hide();
+                        this.Close();
                     }
+                    else
+                    {
+                        MessageBox.Show("Şifre Yanlış");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Kullanıcı Adı Yanlış");
                 }
             }
 
@@ -84,6 +90,32 @@ namespace coffe_otomasyonu
         private void pictureBox1_Click_2(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btn_kayıt_Click(object sender, EventArgs e)
+        {
+            if (txtSifre2.Text==txtPwd.Text)
+            {
+                login lg = new login();
+                lg.userName = txtUser.Text;
+                lg.password = txtPwd.Text;
+
+                co.login.Add(lg);
+
+                if (co.SaveChanges()==1)
+                {
+                    MessageBox.Show("Kayıt Oluşturuldı");
+
+                    cbGiris.Checked = true;
+                    cbKayit.Checked = false;
+
+                    btn_kayıt.Visible = false;
+                    txtSifre2.Visible = false;
+                    label4.Visible = false;
+                    btn_giris.Visible = true;
+                }
+            }
+            
         }
     }
 }
